@@ -90,7 +90,7 @@ app.get('/v2', async (req, res) => {
         ? og.image
         : images.length > 0
         ? images[0].src
-        : null;
+        : "";
       const description = og.description
         ? og.description
         : meta.description
